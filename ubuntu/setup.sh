@@ -14,7 +14,7 @@ wget -O $HOME/.zshrc https://raw.githubusercontent.com/Merlus/setup/main/ubuntu/
 wget -O $HOME/.p10k.zsh https://raw.githubusercontent.com/Merlus/setup/main/ubuntu/.p10k.zsh &&
 
 # reload zsh
-source $HOME/.zshrc &&
+exec zsh &&
 
 # Install Bicep
 az bicep install &&
