@@ -81,7 +81,6 @@ plugins=(
 	git
 	zsh-autosuggestions
   zsh-syntax-highlighting
-  azure-cli
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -119,3 +118,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="$HOME/.tfenv/bin:$PATH"
 export PATH="$HOME/.azure/bin:$PATH"
+
+# az cli completion
+source /etc/bash_completion.d/azure-cli
