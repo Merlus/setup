@@ -15,4 +15,3 @@ wget -O $HOME/.p10k.zsh https://raw.githubusercontent.com/Merlus/setup/main/ubun
 
 # Install tfenv
 git clone --depth=1 https://github.com/tfutils/tfenv.git ~/.tfenv &&
-tfenv install latest
