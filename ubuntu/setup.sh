@@ -11,7 +11,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 # Copy the zshrc file and .p10k.zsh file
 wget -O $HOME/.zshrc https://raw.githubusercontent.com/Merlus/setup/main/ubuntu/.zshrc
-wget -O $HOME/.zshrc https://raw.githubusercontent.com/Merlus/setup/main/ubuntu/.p10k.zsh
+wget -O $HOME/.p10k.zsh https://raw.githubusercontent.com/Merlus/setup/main/ubuntu/.p10k.zsh
 
 # Install Bicep
 az bicep install
