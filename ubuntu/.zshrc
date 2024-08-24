@@ -81,6 +81,7 @@ plugins=(
 	git
 	zsh-autosuggestions
   zsh-syntax-highlighting
+  azure-cli
 )
 
 source $ZSH/oh-my-zsh.sh
