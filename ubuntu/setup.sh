@@ -14,4 +14,4 @@ wget -O $HOME/.zshrc https://raw.githubusercontent.com/Merlus/setup/main/ubuntu/
 wget -O $HOME/.p10k.zsh https://raw.githubusercontent.com/Merlus/setup/main/ubuntu/.p10k.zsh &&
 
 # Install tfenv
-git clone --depth=1 https://github.com/tfutils/tfenv.git ~/.tfenv &&
+git clone --depth=1 https://github.com/tfutils/tfenv.git ~/.tfenv
