@@ -17,6 +17,3 @@ az bicep install
 
 # Install tfenv
 git clone --depth=1 https://github.com/tfutils/tfenv.git ~/.tfenv
-tfenv install latest
-tfenv use latest
-terraform -install-autocomplete
