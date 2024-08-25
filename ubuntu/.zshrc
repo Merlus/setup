@@ -116,8 +116,11 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#paths
 export PATH="$HOME/.tfenv/bin:$PATH"
 export PATH="$HOME/.azure/bin:$PATH"
+export PATH="$PATH:/opt/nvim-linux64/bin:$PATH"
 
 # az cli completion
 source /etc/bash_completion.d/azure-cli
