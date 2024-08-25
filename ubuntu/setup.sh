@@ -18,7 +18,6 @@ chmod +x $(readlink -f /usr/local/bin/pwsh)
 
 # add packages
 apt-get update && apt-get install -y \
-  software-properties-common \
   bat \
   ripgrep \
   fontconfig &&
@@ -30,16 +29,3 @@ ln -s /usr/bin/batcat ~/.local/bin/bat &&
 # install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf &&
 ~/.fzf/install --all &&
-
-# install nerd fonts
-wget -O $HOME/Meslo.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip &&
-unzip $HOME/Meslo.zip -d ~/.fonts &&
-fc-cache -fv &&
-
-# install nvim
-add-apt-repository ppa:neovim-ppa/stable &&
-apt-get update &&
-apt-get install -y neovim &&
-
-# confifgure nvim kickstart
-git clone https://github.com/merlus/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
