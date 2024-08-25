@@ -28,4 +28,4 @@ ln -s /usr/bin/batcat ~/.local/bin/bat &&
 
 # install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf &&
-~/.fzf/install --all &&
+~/.fzf/install --all
