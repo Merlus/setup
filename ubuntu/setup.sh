@@ -15,3 +15,16 @@ wget -O $HOME/.p10k.zsh https://raw.githubusercontent.com/Merlus/setup/main/ubun
 
 # make pwsh executable
 chmod +x $(readlink -f /usr/local/bin/pwsh)
+
+# add packages
+apt-get update && apt-get install -y \
+  neovim \
+  bat &&
+
+# fix batcat
+mkdir -p ~/.local/bin &&
+ln -s /usr/bin/batcat ~/.local/bin/bat &&
+
+# install fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf &&
+~/.fzf/install
