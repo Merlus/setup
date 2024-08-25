@@ -27,4 +27,12 @@ ln -s /usr/bin/batcat ~/.local/bin/bat &&
 
 # install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf &&
-~/.fzf/install
+~/.fzf/install &&
+
+# install nerd fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip &&
+unzip Meslo.zip -d ~/.fonts &&
+fc-cache -fv &&
+
+# confifgure nvim kickstart
+git clone https://github.com/merlus/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
