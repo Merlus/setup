@@ -20,7 +20,8 @@ chmod +x $(readlink -f /usr/local/bin/pwsh)
 apt-get update && apt-get install -y \
   neovim \
   bat \
-  ripgrep &&
+  ripgrep \
+  fontconfig &&
 
 # fix batcat
 mkdir -p ~/.local/bin &&
