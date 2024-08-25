@@ -19,7 +19,8 @@ chmod +x $(readlink -f /usr/local/bin/pwsh)
 # add packages
 apt-get update && apt-get install -y \
   neovim \
-  bat &&
+  bat && \
+  ripgrep &&
 
 # fix batcat
 mkdir -p ~/.local/bin &&
