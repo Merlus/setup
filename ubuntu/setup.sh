@@ -32,7 +32,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf &&
 ~/.fzf/install --all &&
 
 # install nerd fonts
--O $HOME/Meslo.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip &&
+wget -O $HOME/Meslo.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip &&
 unzip Meslo.zip -d ~/.fonts &&
 fc-cache -fv &&
 
